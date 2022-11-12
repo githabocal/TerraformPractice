@@ -1,4 +1,4 @@
-name: vpc-cft-deploy
+name: deploy
 
 on:
   push:
@@ -10,8 +10,8 @@ on:
 
 jobs:
   cft-actions:
-    name: vpc-cft-deploy
-    runs-on: ubuntu-latest
+    name: deploy
+    runs-on: self-hosted
 
     steps:
     - name: checkout repository 
